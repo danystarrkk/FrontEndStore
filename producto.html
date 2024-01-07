@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrontendStore</title>
-    <link rel="stylesheet" href="css/normalice.css">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/normalice.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <a href="Index.html">
-            <img class="header__logo" src="img/logo.png" alt="Logotipo">
-        </a>
+      <a href="Index.html">
+        <img class="header__logo" src="img/logo.png" alt="Logotipo" />
+      </a>
     </header>
 
     <nav class="navegación">
-        <a class="navegación__enlace navegación__enlace--activo" href="Index.html">Tienda</a>
-        <a class="navegación__enlace" href="nosotros.html">Nosotros</a>
+      <a class="navegación__enlace navegación__enlace--activo" href="Index.html"
+        >Tienda</a
+      >
+      <a class="navegación__enlace" href="nosotros.html">Nosotros</a>
     </nav>
 
-    <main>
-        <h1>Producto</h1>
+    <main class="contenedor">
+      <h1>React js</h1>
+
+      <div class="camisa">
+        <img class="camisa__imagen" src="img/3.jpg" alt="imagen producto" />
+
+        <div class="camisa__contenido">
+          <p>
+            Integer gravida placerat facilisis. Integer eleifend, nisi iaculis
+            consequat cursus, est orci congue nibh, eu sollicitudin nibh mi vel
+            lectus. Quisque malesuada urna erat, et pretium sapien rhoncus a.
+            Nunc faucibus eget odio id tempus. Maecenas aliquam tempus tortor id
+            venenatis.
+          </p>
+
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected>--Seleccionar Talla--</option>
+              <option>pequeña</option>
+              <option>Mediana</option>
+              <option>Grande</option>
+            </select>
+
+            <input
+              class="formulario__campo"
+              type="number"
+              placeholder="Cantidad"
+              min="1"
+            />
+
+            <input
+              class="formulario__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2024</p>
+      <p class="footer__texto">
+        Front End Store - Todos los derechos Reservados 2024
+      </p>
     </footer>
-
-</body>
-
+  </body>
 </html>
